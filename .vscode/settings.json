@@ -1,0 +1,22 @@
+json {"html.autoClosingTags": false,
+"html.suggest.html5": false,
+"editor.suggestOnTriggerCharacters": false,
+"editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+}, 
+ "editor.wordBasedSuggestions": "off",
+ "editor.linkedEditing": true,
+ "editor.parameterHints.enabled": false,
+ "editor.inlineSuggest.enabled": false,
+ "editor.suggest.showWords": false,
+ "emmet.showExpandedAbbreviation": "never",
+ "emmet.showAbbreviationSuggestions": false,
+ "emmet.excludeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescript": "html",
+    "typescriptreact": "html"
+  } 
+ }    

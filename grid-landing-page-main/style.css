@@ -1,0 +1,193 @@
+/*universal reset*/
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: hsl(255, 100%, 58%);
+    --line: rgba(255, 255, 255, 0.25); /*subtle line colors */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: hsl(228, 100%, 60%);
+    color: hsl(224, 100%, 95%);
+    font-family: "Inter", sasn-serif;
+}
+
+header {
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 10; /*keeps the panel above the grid*/
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.brand {
+    margin-right: auto;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+
+.menuContainer {
+    display: none;
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 35vw;
+    height: 100vh;
+    background-color: hsl(228, 99%, 58%);
+    border: 1px solid hsl(228, 99%, 58%);
+    z-index: 100; /*above the icon */
+}
+
+.menuWrapper:hover .menuContainer {
+    display: block;
+}
+
+body:has(.menuContainer:hover) {
+    background-color: hsl(228, 75%, 51%);
+}
+.menuContainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuContainer a {
+    display: block;
+    padding: 10px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.menuContainer a:hover {
+    text-decoration: underline 2px white;
+    text-underline-offset: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "hero stat1 stat2"
+        "hero stat3 stat4";
+    gap: 0px;
+    padding: 0px 24px;
+    height: 100vh;
+    width: auto;
+    border-bottom: 1px solid var(--line);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.2s ease;
+    padding: 24px;
+    width: auto;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: hsl(228, 93%, 62%);
+}
+
+[style*="stat1"],
+[style*="stat3"] {
+    border-left: 1px solid var(--line);
+}
+
+[style*="stat2"],
+[style*="stat4"] {
+    border-left: 1px solid var(--line);
+}
+
+[style*="stat1"],
+[style*="stat2"] {
+    border-bottom: 1px solid var(--line);
+}
+
+.mainStat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically centering the text block */
+}
+
+.mainStat h1 {
+    margin: 0 0 24px; /*space between title and para */
+}
+
+.mainStat p {
+    margin: 0;
+    line-height: 1.5;
+    max-width: 380px; /* keeps the lines short */
+}
+
+.statTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.statBottom h4{
+    margin: 0 0 6px;
+}
+
+.statBottom .stats {
+    margin: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 16px 24px;
+}
+
+.attribution {
+    margin: auto;
+    padding: 16px 24px;
+    font-size: 14px;
+}
+
+@media (max-width: 375px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

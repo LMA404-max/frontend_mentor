@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" viewport-fit="cover">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,arrow_forward,circle,close,density_large,star_shine,trending_up" />
+  
+  <link rel="stylesheet" href="style.css">
+
+ 
+
+  <title>Frontend Mentor | Grid landing page</title>
+</head>
+<body>
+
+  <header>
+
+    <!--fix the hover issue later-->
+    <div class="page">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'opsz' 15 !important; gap: 5px;">circle</span>
+      <span class="brand">Bridge Collective</span>
+        <div class="menuWrapper">
+          <span class="material-symbols-outlined menu-icon">density_large</span>
+            <nav class="menuContainer">
+              <ul class="menuItems">
+                <li><span class="material-symbols-outlined menu-close">close</span></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Annual Report</a></li>
+                <li><a href="#">Donate</a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-container">
+      <div class="mainStat" style="grid-area: hero;">
+        <h1>A classroom for every child.</h1>
+        <p class="hero">We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.</p>
+      </div>
+
+        <div class="item" style="grid-area: stat1;">
+          <div class="statTop">
+            <span class="material-symbols-outlined">star_shine</span>
+            <h2>2.4 M</h2>
+          </div>
+          <div class="statBottom">
+            <h4>Students reached</h4>
+            <p class="stats">Across 31 countries since 2011.</p>
+          </div>
+        </div>
+
+        <div class="item" style="grid-area: stat2;">
+          <div class="statTop">
+            <span class="material-symbols-outlined">add</span>
+            <h2>1,284</h2>
+          </div>
+          <div class="statBottom">
+            <h4>Schools partnered</h4>
+            <p class="stats">In 14 countries, from Kenya to Guatemala.</p>
+          </div>
+        </div>
+
+        <div class="item" style="grid-area: stat3;">
+          <div class="statTop">
+            <span class="material-symbols-outlined">arrow_forward</span>
+            <h2>38 K</h2>
+          </div>
+          <div class="statBottom">
+            <h4>Teachers trained</h4>
+            <p class="stats">Equipped with modern tools and methodology.</p>
+          </div>
+        </div>
+
+        <div class="item" style="grid-area: stat4;">
+          <div class="statTop">
+            <span class="material-symbols-outlined">trending_up</span>
+            <h2>3.1 x</h2>
+          </div>
+          <div class="statBottom">
+            <h4>Graduation lift</h4>
+            <p class="stats">Partner schools outperform national averages 3x.</p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <p class="footer">&copy 2026 Bridge Collective</p>
+    <p class="footer">Registered charity 12345678</p>
+  </footer>
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a><br>
+    Coded by <a href="https://github.com/LMA404-max/frontend_mentor">LMA404-max</a>
+  </div>
+  </body>
+</html>
