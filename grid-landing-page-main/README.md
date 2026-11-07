@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/LMA404-max/frontend_mentor/tree/main/grid-landing-page-main]
-- Live Site URL: [https://app.netlify.com/projects/gridlandingpagefm/overview?modal=go-live]
+- Live Site URL: [https://gridlandingpagefm.netlify.app/]
 
 ## My process
 
